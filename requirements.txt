@@ -1,0 +1,5 @@
+transformers
+pytorch-crf
+msgpack
+torch
+sentencepiece

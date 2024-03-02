@@ -1,0 +1,26 @@
+Namespace(name='punctuation-restore', cuda=True, seed=1, pretrained_model='bert-base-multilingual-cased', freeze_bert=False, lstm_dim=-1, use_crf=False, data_path='data', language='bangla', sequence_length=256, augment_rate=0.15, augment_type='all', sub_style='unk', alpha_sub=0.4, alpha_del=0.4, lr=5e-06, decay=0, gradient_clip=-1, batch_size=8, epoch=3, save_path='out')
+epoch: 0, Train loss: 0.05749124481188653, Train accuracy: 0.9520204410586549
+epoch: 0, Val loss: 0.11526746714184201, Val accuracy: 0.902308226487241
+Namespace(name='punctuation-restore', cuda=True, seed=1, pretrained_model='bert-base-multilingual-cased', freeze_bert=False, lstm_dim=-1, use_crf=False, data_path='data', language='bangla', sequence_length=256, augment_rate=0.0, augment_type='none', sub_style='unk', alpha_sub=0.4, alpha_del=0.4, lr=5e-06, decay=0, gradient_clip=-1, batch_size=64, epoch=3, save_path='out')
+epoch: 0, Train loss: 0.06937736946153131, Train accuracy: 0.9453411929956239
+epoch: 0, Val loss: 0.10589886410460993, Val accuracy: 0.908291389843187
+epoch: 1, Train loss: 0.037895431694985306, Train accuracy: 0.9648869959272643
+epoch: 1, Val loss: 0.10087157940647587, Val accuracy: 0.9120308399754969
+epoch: 2, Train loss: 0.03306938318660647, Train accuracy: 0.9691931324241967
+epoch: 2, Val loss: 0.09600866747106679, Val accuracy: 0.9160600459414096
+Precision: [0.96276154 0.5389028  0.69401585 0.48554209 0.25041736 0.55996618
+ 0.35575563 0.5125     0.62527491]
+Recall: [0.96217911 0.51088492 0.77180513 0.52077281 0.02155482 0.45561705
+ 0.32756987 0.01153954 0.62764051]
+F1 score: [0.96247024 0.52451998 0.7308464  0.50254074 0.03969304 0.50243078
+ 0.34108145 0.02257088 0.62645547]
+Accuracy:0.9160600459414096
+Confusion Matrix[[2333242   36590   39515    3099     148    9294    3066       2]
+ [  33153   60030   21173    1116      74    1275     655      26]
+ [  34422    8710  158643    2492     140     307     824      10]
+ [   3701     774    1972    7170      75      24      52       0]
+ [   2583     623    2808     729     150      31      35       0]
+ [  12833    2643    1503      86       8   14572     338       0]
+ [   2612    1383    1129      43       3     507    2766       1]
+ [    943     640    1844      32       1      13      39      41]]
+53.8902803587299 51.088492110772584 52.451997640839686 69.40158451705477 77.18051258100299 73.08463957064045 48.55420870860703 52.07728065078443 50.25407394427896 25.041736227045075 2.1554821094984913 3.9693040486901294

@@ -1,0 +1,2 @@
+# Example script for training
+! python src/train.py --cuda=True --pretrained-model=bert-base-multilingual-cased --freeze-bert=False --lstm-dim=-1 --language=bangla --seed=1 --lr=5e-6 --epoch=3 --use-crf=False --augment-type=none --data-path=data --save-path=out --batch-size=64
